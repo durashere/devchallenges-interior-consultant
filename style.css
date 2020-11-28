@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@400;700&family=Montserrat:wght@300;500;600;700&display=swap");
+
+:root {
+  --color-primary: #333333;
+  --color-secondary: #4f4f4f;
+  --color-footer: #a9a9a9;
+  --color-font: #ffffff;
+  --color-background: #181719;
+
+  --font-cr: "Crimson Pro", serif;
+  --font-lo: "Lora", serif;
+  --font-mo: "Montserrat", sans-serif;
+
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-font);
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--space-md);
+}
+
+.logo {
+  font-family: var(--font-cr);
+  font-size: 14px;
+  border: 2px solid var(--color-font);
+  text-transform: uppercase;
+
+  padding: 0.3em 0.6rem;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.close-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.content__info h1 {
+  font-family: var(--font-lo);
+  font-size: 36px;
+  font-weight: 400;
+
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-lg);
+}
+
+.content__info p {
+  font-family: var(--font-mo);
+  font-size: 14px;
+  font-weight: 300;
+
+  padding-bottom: var(--space-md);
+}
+
+.content__info button {
+  color: var(--color-font);
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  padding-bottom: var(--space-lg);
+}
+
+.content__info button i {
+  transform: translateY(var(--space-sm));
+}
+
+.content__image img {
+  width: 100%;
+}
+
+.content__author {
+  background-color: var(--color-background);
+  box-shadow: 0px 4px 4px 0px #ffffff 25%;
+
+  transform: scale(0.9) translate(0.5rem, -4rem);
+}
+
+.content__author h2 {
+  margin: var(--space-md);
+
+  font-family: var(--font-lo);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  padding: var(--space-md);
+}
+
+.author img {
+  width: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author__details {
+  margin-left: var(--space-md);
+}
+
+.author__name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.author__title {
+  color: #828282;
+  font-family: var(--font-mo);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer {
+  align-self: center;
+}
+
+.footer p {
+  font-family: var(--font-mo);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-footer);
+
+  margin-bottom: var(--space-md);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--color-footer);
+}
